@@ -44,9 +44,6 @@ textarea {
 input::-ms-clear {
 	display: none;
 }
-button {
-	cursor: pointer;
-}
 button, a{
 	cursor: pointer;
 	transition: all .2s;
@@ -88,13 +85,29 @@ h6 {
 	font-weight: $fontWeightBase;
 	font-size: $fontSizeBase;
 	color: $BaseColor;
-	background: rgba(32, 8, 59, 1);
+	background: #0C0B0E;
+
 	
 	
 }	
-.container{
+
+.container-380{ // отступы контейнера по сторонам по 380px 
 	margin: 0 auto;
 	max-width: $maxWidthContainer;
 	// padding:0 15px;
 	
 }
+
+.container-340{ // отступы контейнера по сторонам по 340px 
+	margin: 0 auto;
+	max-width: 1240px;
+	// padding:0 15px;
+	
+}
+
+// .container{ // отступы контейнера по сторонам по 380px 
+// 	margin: 0 auto;
+// 	max-width: $maxWidthContainer;
+// 	// padding:0 15px;
+	
+// }
