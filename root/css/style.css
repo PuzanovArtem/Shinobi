@@ -177,6 +177,7 @@ h6 {
 
 .header {
   display: flex;
+  margin: 0 0 30px 0;
   padding: 20px 0 0 0px;
   transition: 0.5s;
   align-items: center;
@@ -240,9 +241,9 @@ h6 {
 }
 .header .burger .humb {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #EAFC52;
   margin: 6px 0px;
   transition: 0.3s;
 }
@@ -270,7 +271,11 @@ h6 {
     margin: 0 0px 0 40px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .header {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
   .header__content {
     position: absolute;
     flex-direction: column;
@@ -282,16 +287,28 @@ h6 {
     left: -100%;
     margin: 0;
     transition: 0.3s;
+    padding: 0;
   }
   .header__content nav .nav {
     flex-direction: column;
   }
-  .header {
-    flex-basis: 100%;
-    justify-content: space-between;
+  .header__content nav .nav li {
+    margin: 20px auto;
   }
-  .header .burger {
-    display: block;
+  .header__content nav .nav li a:hover {
+    color: #EAFC52;
+  }
+  .header__content nav .nav li:nth-child(2) {
+    margin: 0 0px;
+  }
+  .header__content nav .nav li:nth-child(4) {
+    margin: 0 0px 0 0px;
+  }
+  .header__content-link {
+    flex-direction: column;
+    padding-top: 60px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
   }
   .header__content.active {
     left: 0;
@@ -299,64 +316,199 @@ h6 {
     background-size: cover;
     transition: 0.3s;
     z-index: 60;
-    background: rgb(32, 8, 59);
+    background: #0C0B0E;
+    margin: 30px 0 0 0;
   }
-  .header__content nav .nav li a {
-    margin: 20px 0px;
+  .header .burger {
+    display: block;
+    margin: 0 20px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+    height: 110px;
+  }
+  .header__logo {
+    margin: 5px 0 0 26px;
+  }
+  .header__logo a img {
+    width: 70px;
+    height: 70px;
+  }
+  .header__content nav .nav li {
+    margin: 20px auto;
+  }
+  .header__content nav .nav li a:hover {
+    color: #EAFC52;
+  }
+  .header__content nav .nav li:nth-child(2) {
+    margin: 0 0px;
+  }
+  .header__content nav .nav li:nth-child(4) {
+    margin: 0 0px 0 0px;
   }
   .header__content-link {
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 60px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
   }
-  .header__content-link a {
-    margin: 20px 0;
+  .header__content.active {
+    left: 0;
+    background-position: top center;
+    background-size: cover;
+    transition: 0.3s;
+    z-index: 60;
+    background: #0C0B0E;
+    margin: 0px 0 0 0;
+  }
+  .header .burger {
+    display: block;
+    margin: 0 20px 0 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .header {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 61px;
+    padding: 10px 0 0 25px;
+  }
+  .header__logo {
+    margin: 5px 0 0 26px;
+  }
+  .header__logo a img {
+    width: 50px;
+    height: 50px;
   }
   .header .burger {
-    padding-right: 29px;
-  }
-}
-@media (max-width: 425px) {
-  .header-header {
-    height: 61px;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    height: 61px;
-    padding-left: 25px;
-    padding-top: 10px;
-  }
-  .header__logo img {
-    width: 13.5px;
-    height: 22px;
-  }
-  .header__logo p {
-    font-family: "Orbitron";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .header__logo p span {
-    color: #FFFFFF;
-  }
-  .header .burger {
-    padding-right: 29px;
+    margin: 10px 60px 0 0;
   }
   .header .burger .humb {
     display: block;
-    width: 20px;
+    width: 30px;
     height: 3px;
-    background-color: #FFFFFF;
     margin: 6px 0px;
     transition: 0.3s;
   }
+}
+.hero__content {
+  margin: 55px 0 30px 0;
+}
+.hero__content-title {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 60px;
+  color: #EAFC52;
+  text-transform: uppercase;
+  max-width: 1030px !important;
+  margin: 0px 0 0 58px;
+  padding: 0 0 0 0px;
+  text-align: center;
+}
+.hero__content-title span {
+  font-family: "Raleway";
+  font-size: 60px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+.hero__content-text {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  margin: 30px 0 0 0px;
+}
+.hero__content-trade {
+  background: #1B1B1B;
+  border-radius: 20px;
+  width: 360px;
+  height: 55px;
+  margin: 30px auto 0;
+  padding: 13px 0 0px 25px;
+}
+.hero__content-trade span {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
+  align-items: center;
+  color: #EAFC52;
+}
+.hero__content .content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAFC52;
+  border-radius: 30px;
+  width: 370px;
+  height: 97px;
+  margin: 40px auto 0;
+}
+.hero__content .content-btn span {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.hero__content .next {
+  display: flex;
+  justify-content: center;
+}
+.hero__content-next {
+  margin: 45px 0 0 0;
+}
+
+.trading {
+  margin: 132px 0 0 5px;
+}
+.trading__content__title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.trading__content__title h2 {
+  font-family: "Orbitron";
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 94px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.trading__content__title .content__title__text {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 0 0 40px;
+}
+.trading__content__title .content__title__text span {
+  padding: 11px 25px 10px 22px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+}
+.trading__content__body {
+  display: flex;
+}
+.trading__content__body-left-text {
+  font-family: "Orbitron";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.trading__content__body-right-text {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
 }

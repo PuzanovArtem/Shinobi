@@ -1,0 +1,67 @@
+.trading{
+    margin: 132px 0 0 5px;
+    &__content{
+
+        &__title{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            h2{
+                font-family: 'Orbitron';
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 94px;
+                text-align: left;
+                color: $BaseColor;
+                text-transform: uppercase;
+            }
+
+            .content__title__text{
+                display: flex;
+                background: $BaseColor;
+                border-radius:  20px;
+                margin: 0 0 0 40px;
+                span{
+                    padding: 11px 25px 10px 22px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #000000;
+
+                }
+            }
+        }
+        &__body{
+            display: flex;
+            
+            &-left{
+                
+                &-text{
+                    font-family:'Orbitron';
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 50px;
+                    text-align: left;
+                    color: $BaseColor;                    
+                }
+
+            }
+
+            &-right{
+
+                &-text{
+                    
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 50px;
+                    text-align: left;
+                    
+                }
+            }
+            
+            
+        }
+    }
+
+}

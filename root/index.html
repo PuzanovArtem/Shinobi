@@ -58,8 +58,83 @@
         <main>
             
 <section class="hero">
-
+    <div class="container-380">
+        <div class="hero__content">
+            <h1 class="hero__content-title">
+                shinobi<span>-ваша стратегия без ограничений</span>
+            </h1>
+            <p class="hero__content-text">СТРАТЕГИЯ. ИНДИКАТОРЫ. АВТОТРЕЙДИНГ.</p>
+            <div class="hero__content-trade">
+                <span>*БЕЗ комиссий за сделки</span>
+            </div>
+            <button class="content-btn">
+                <span>РЕГИСТРАЦИЯ</span>
+            </button>
+            <div class="hero__content-next next">
+                <a href="">
+                    <img src="img/arrow-next.svg" alt="">
+                </a>
+            </div>
+        </div>
+        
+    </div>
     
+</section>
+            <section class="trading">
+    <div class="container-380">
+        <div class="trading__content">
+            <div class="trading__content__title">
+
+                <h2 class="content__title-title">
+                    shinobi
+                </h2>
+
+                <div class="content__title__text">
+
+                    <span>ЛИЧНЫЙ РАЗВЕДЧИК В МИРЕ КРИПТЫ</span>
+                       
+                </div>
+            </div>
+            <div class="trading__content__body">
+
+                <div class="content__body-left">
+
+                    <p class="body-left-text">ОН</p>
+
+                    <img src="img/yellow-arrow.svg" alt="" class="body-left-arrow trading__yellow-arrow">
+
+                    <div class="body-left-text-bg">
+
+                        <span>АНАЛИЗИРУЕТ</span>
+
+                    </div>
+                </div>
+
+                <div class="content__body-right">
+
+                    <p class="body-right-text">ВЫ</p>
+
+                    <img src="img/yellow-arrow.svg" alt="" class="body-right-arrow trading__yellow-arrow">
+
+                    <div class="body-right-text-bg">
+
+                        <span>ПРИНИМАЕТЕ РЕШЕНИЕ</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <button class="content-btn">
+                <span>РЕГИСТРАЦИЯ</span>
+            </button>
+
+            <div class="trading__content-next next">
+                <a href="">
+                    <img src="img/arrow-next.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
             
         </main>
@@ -75,7 +150,34 @@
     
     <script src="js/app.min.js"></script>
     <script src="js/script.js"></script>
-    
+
+    <script>   //burger
+        const burger = document.querySelector('.burger');
+        const content = document.querySelector('.header__content');
+        const navLink = document.querySelectorAll('.nav-link');
+
+
+        function openMenu(){
+            const activeBurger =  burger.classList.toggle('active');
+            const activeContent = content.classList.toggle('active');
+            if(activeBurger){
+                document.body.style.overflow = 'hidden';
+            }if(!activeBurger){
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        burger.addEventListener('click', openMenu)
+
+        function closeMenu(){
+            burger.classList.remove('active');
+            content.classList.remove('active');
+            document.body.style.overflow = 'scroll';
+        }
+
+        navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+    </script>
 </body>
 </html>
 
