@@ -1,0 +1,73 @@
+.container{
+    padding: 0 200px;
+}
+
+.samurai{
+    margin: 105px 0 0 0;
+    &__content{
+        display: flex;
+
+        .samurai__content__left{
+
+            .content__left-img{
+                position: relative;
+
+                .content__left-binance{
+                    position: absolute;
+                    top: -36px;
+                    right: 47px;
+                
+                }
+
+                .content__left-samurai{
+                    position: relative;
+                    left: -94px;
+                }
+            }
+        }
+        
+        .samurai__content__right{
+           display: flex;
+
+            .samurai__list__colum{
+                 
+                .samurai__list__title{
+                    font-family: $fontFamileSecond;
+                    font-size: 90px;
+                    font-weight: 700;
+                    line-height: 112px;
+                    // text-align: left;
+                    text-transform: uppercase;
+                    max-width: 415px;
+                }
+
+                ul{
+
+                    li{
+                        width: 455px;
+                        p{
+                            
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 23px;
+                            text-align: right;
+
+                            span{
+                                
+
+                            }
+                        }
+                    }
+                    .list__item-arrow{
+                        width: 50px;
+                    }
+                }
+            }
+            .samurai__list-arrow{
+                padding: 0 0 0 36px;
+            }
+        }
+    }
+        
+    
+}

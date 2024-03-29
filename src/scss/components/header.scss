@@ -1,14 +1,14 @@
 .header{
     display: flex;
     margin:  0 0 30px 0;
-    padding: 20px 0 0 0px;
+    padding: 25px 0 0 0px;
     transition: 0.5s;
     align-items: center;
 
     &__logo{
         display: flex;
         align-items: center;
-        margin: 0 0 0 25px;
+        margin: 0 0 0 36px;
         
 		
     }
@@ -18,7 +18,7 @@
         flex-basis: 100%;
         align-items: center;
         
-        padding:  0 0 0 77px;
+        padding:  10px 0 0 92px;
        
 
         nav{
@@ -33,9 +33,7 @@
                 li{
 
                     a{
-                        font-family: 'Raleway';
                         font-weight: 400;
-                        font-size: 18px;
                         line-height: 21px;
                         color: rgba(255, 255, 255, 0.6);
                         
@@ -216,7 +214,7 @@
 
    
 }
-@media(max-width:767px){
+@media(max-width:768px){
 
     .header{
         display: flex;
@@ -229,8 +227,8 @@
             a{
 
                 img{
-                    width: 70px;
-                    height: 70px;
+                    width: 60px;
+                    height: 60px;
                 }
             }
 
@@ -298,13 +296,13 @@
         padding: 10px 0 0 25px;
 
 		&__logo{
-            margin: 5px 0 0 26px;
+            margin: 3px 0 0 33px;
 
             a{
 
                 img{
-                    width: 50px;
-                    height: 50px;
+                    width: 35px;
+                    height: 35px;
                 }
             }
 

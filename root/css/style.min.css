@@ -175,24 +175,71 @@ h6 {
   max-width: 1240px;
 }
 
+.next {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAFC52;
+  border-radius: 30px;
+  width: 370px;
+  height: 97px;
+}
+.registration-btn span {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .registration-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAFC52;
+    border-radius: 30px;
+    width: 243px;
+    height: 64px;
+  }
+  .registration-btn span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+@media (max-width: 525px) {
+  .next {
+    display: none;
+  }
+}
 .header {
   display: flex;
   margin: 0 0 30px 0;
-  padding: 20px 0 0 0px;
+  padding: 25px 0 0 0px;
   transition: 0.5s;
   align-items: center;
 }
 .header__logo {
   display: flex;
   align-items: center;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 36px;
 }
 .header__content {
   display: flex;
   justify-content: space-between;
   flex-basis: 100%;
   align-items: center;
-  padding: 0 0 0 77px;
+  padding: 10px 0 0 92px;
 }
 .header__content nav .nav {
   display: flex;
@@ -201,9 +248,7 @@ h6 {
   margin: 0;
 }
 .header__content nav .nav li a {
-  font-family: "Raleway";
   font-weight: 400;
-  font-size: 18px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -324,7 +369,7 @@ h6 {
     margin: 0 20px 0 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     display: flex;
     align-items: center;
@@ -334,8 +379,8 @@ h6 {
     margin: 5px 0 0 26px;
   }
   .header__logo a img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .header__content nav .nav li {
     margin: 20px auto;
@@ -377,11 +422,11 @@ h6 {
     padding: 10px 0 0 25px;
   }
   .header__logo {
-    margin: 5px 0 0 26px;
+    margin: 3px 0 0 33px;
   }
   .header__logo a img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
   .header .burger {
     margin: 10px 60px 0 0;
@@ -395,7 +440,7 @@ h6 {
   }
 }
 .hero__content {
-  margin: 55px 0 30px 0;
+  margin: 70px 0 30px 0;
 }
 .hero__content-title {
   font-family: "Orbitron";
@@ -438,41 +483,58 @@ h6 {
   align-items: center;
   color: #EAFC52;
 }
-.hero__content .content-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #EAFC52;
-  border-radius: 30px;
-  width: 370px;
-  height: 97px;
+.hero__content .hero__content-btn {
   margin: 40px auto 0;
-}
-.hero__content .content-btn span {
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-.hero__content .next {
-  display: flex;
-  justify-content: center;
 }
 .hero__content-next {
   margin: 45px 0 0 0;
 }
 
-.trading {
+@media (max-width: 768px) {
+  .hero__content {
+    margin: 11px 0 30px 0;
+  }
+  .hero__content-title {
+    font-size: 40px;
+    line-height: 35px;
+    margin: 0px auto;
+    padding: 0 36px;
+  }
+  .hero__content-title span {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .hero__content-text {
+    font-size: 15px;
+    line-height: 17px;
+    margin: 8px auto 0;
+    padding: 0 50px;
+  }
+  .hero__content-trade {
+    background: #1B1B1B;
+    border-radius: 20px;
+    width: 186px;
+    height: 39px;
+    margin: 30px auto 0;
+    padding: 5px 0 0px 12px;
+  }
+  .hero__content-trade span {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .hero__content .hero__content-btn {
+    margin: 35px auto 0;
+  }
+}
+.scout {
   margin: 132px 0 0 5px;
 }
-.trading__content__title {
+.scout__content__title {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.trading__content__title h2 {
+.scout__content__title h2 {
   font-family: "Orbitron";
   font-size: 75px;
   font-weight: 700;
@@ -481,13 +543,13 @@ h6 {
   color: #FFFFFF;
   text-transform: uppercase;
 }
-.trading__content__title .content__title__text {
+.scout__content__title .content__title__text {
   display: flex;
   background: #FFFFFF;
   border-radius: 20px;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 35px;
 }
-.trading__content__title .content__title__text span {
+.scout__content__title .content__title__text span {
   padding: 11px 25px 10px 22px;
   font-size: 30px;
   font-weight: 700;
@@ -495,20 +557,236 @@ h6 {
   text-align: center;
   color: #000000;
 }
-.trading__content__body {
+.scout__content__centre {
   display: flex;
+  justify-content: space-between;
+  margin: 65px 0 0 0;
 }
-.trading__content__body-left-text {
-  font-family: "Orbitron";
+.scout__content__centre .centre__left {
+  width: 362px;
+  text-align: center;
+  margin: 0 0 0 40px;
+}
+.scout__content__centre .centre__left-text {
   font-size: 40px;
   font-weight: 500;
   line-height: 50px;
-  text-align: left;
+  padding: 0 auto;
   color: #FFFFFF;
 }
-.trading__content__body-right-text {
+.scout__content__centre .centre__left__text-bg {
+  box-shadow: 0px 4px 15px 0px #000000;
+  background: linear-gradient(180deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%);
+  border-radius: 20px;
+  height: 72px;
+  align-items: center;
+  text-align: center;
+  padding: 16px 30px 10px 30px;
+}
+.scout__content__centre .centre__left__text-bg span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+}
+.scout__content__centre .centre__right {
+  width: 561px;
+  text-align: center;
+  margin: 0 -28px 0 0px;
+}
+.scout__content__centre .centre__right-text {
   font-size: 40px;
   font-weight: 500;
   line-height: 50px;
-  text-align: left;
+  padding: 0 auto;
+  color: #FFFFFF;
+}
+.scout__content__centre .centre__right__text-bg {
+  box-shadow: 0px 4px 15px 0px #000000;
+  background: linear-gradient(180deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%);
+  border-radius: 20px;
+  height: 66px;
+  align-items: center;
+  text-align: center;
+  padding: 5px 30px 5px 30px;
+  margin: 5px 0 0 0;
+}
+.scout__content__centre .centre__right__text-bg span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+}
+.scout__content__centre .scout__yellow-arrow {
+  margin: 30px 0 36px 0;
+}
+.scout__content button {
+  margin: 47px auto 0;
+}
+.scout__content .scout__content-next {
+  margin-top: 41px;
+}
+
+@media (max-width: 1024px) {
+  .scout {
+    margin: 132px 0 0 5px;
+  }
+  .scout__content__title {
+    display: contents;
+    justify-content: center;
+  }
+  .scout__content__title h2 {
+    font-size: 75px;
+    line-height: 94px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .scout__content__title .content__title__text {
+    max-width: 634px;
+    margin: 0 auto;
+  }
+  .scout__content__title .content__title__text span {
+    padding: 11px 25px 10px 22px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .scout__content__centre {
+    display: contents;
+    justify-content: center;
+  }
+  .scout__content__centre .centre__left {
+    width: 362px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .scout__content__centre .centre__right {
+    width: 561px;
+    text-align: center;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 768px) {
+  .scout {
+    margin: 105px 0 50px 5px;
+  }
+  .scout__content__title {
+    display: contents;
+    justify-content: center;
+  }
+  .scout__content__title h2 {
+    font-size: 35px;
+    line-height: 44px;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 5px;
+  }
+  .scout__content__title .content__title__text {
+    max-width: 305px;
+    margin: 0 auto;
+  }
+  .scout__content__title .content__title__text span {
+    padding: 6px 15px 8px 17px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .scout__content__centre {
+    display: contents;
+    justify-content: center;
+  }
+  .scout__content__centre .centre__left {
+    width: 362px;
+    text-align: center;
+    margin: 45px auto 0;
+  }
+  .scout__content__centre .centre__left p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .scout__content__centre .centre__left__text-bg {
+    height: 38px;
+    width: 168px;
+    padding: 12px 10px 10px 0px;
+    margin: 0 auto;
+  }
+  .scout__content__centre .centre__left__text-bg span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .scout__content__centre .centre__right {
+    width: 362px;
+    text-align: center;
+    margin: 54px auto 0;
+  }
+  .scout__content__centre .centre__right p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .scout__content__centre .centre__right__text-bg {
+    height: 38px;
+    padding: 10px 10px 10px 0px;
+    width: 267px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .scout__content__centre .centre__right__text-bg span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .scout__content__centre .scout__yellow-arrow {
+    width: 30px;
+    height: 10px;
+    margin: 5px 0 5px 0;
+  }
+}
+@media (max-width: 525px) {
+  .scout__content .scout__content-btn {
+    display: none;
+  }
+}
+.container {
+  padding: 0 200px;
+}
+
+.samurai {
+  margin: 105px 0 0 0;
+}
+.samurai__content {
+  display: flex;
+}
+.samurai__content .samurai__content__left .content__left-img {
+  position: relative;
+}
+.samurai__content .samurai__content__left .content__left-img .content__left-binance {
+  position: absolute;
+  top: -36px;
+  right: 47px;
+}
+.samurai__content .samurai__content__left .content__left-img .content__left-samurai {
+  position: relative;
+  left: -94px;
+}
+.samurai__content .samurai__content__right {
+  display: flex;
+}
+.samurai__content .samurai__content__right .samurai__list__colum .samurai__list__title {
+  font-family: "Orbitron";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 112px;
+  text-transform: uppercase;
+  max-width: 415px;
+}
+.samurai__content .samurai__content__right .samurai__list__colum ul li {
+  width: 455px;
+}
+.samurai__content .samurai__content__right .samurai__list__colum ul li p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: right;
+}
+.samurai__content .samurai__content__right .samurai__list__colum ul .list__item-arrow {
+  width: 50px;
+}
+.samurai__content .samurai__content__right .samurai__list-arrow {
+  padding: 0 0 0 36px;
 }

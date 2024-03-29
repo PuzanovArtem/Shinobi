@@ -1,0 +1,63 @@
+.next{
+    display: flex;
+    justify-content: center;
+
+}
+
+.registration-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $YellowColor;
+    border-radius: 30px;
+    width: 370px;
+    height: 97px;
+    
+    span{
+                
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        color:  #000000;
+
+    }
+
+}
+
+
+
+@media (max-width: 1024px){
+
+}
+@media (max-width: 768px){
+    .registration-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $YellowColor;
+        border-radius: 30px;
+        width: 243px;
+        height: 64px;
+        
+        span{
+                    
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color:  #000000;
+    
+        }
+    
+    }
+}
+
+
+@media (max-width: 525px){
+    .next{
+        display: none;
+    }
+}
