@@ -167,12 +167,14 @@ h6 {
 
 .container-380 {
   margin: 0 auto;
-  max-width: 1160px;
+  max-width: 1190px;
+  padding: 0 15px;
 }
 
 .container-340 {
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1270px;
+  padding: 0 15px;
 }
 
 .next {
@@ -224,6 +226,8 @@ h6 {
 }
 .header {
   display: flex;
+  margin: 0 0 30px 0;
+  padding: 25px 0 0 0px;
   transition: 0.5s;
   align-items: center;
 }
@@ -454,16 +458,18 @@ h6 {
 }
 .hero__content-title span {
   font-family: "Raleway";
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 57px;
+  line-height: 65px;
   color: #FFFFFF;
+  letter-spacing: 1px;
 }
 .hero__content-text {
   font-size: 30px;
   font-weight: 600;
   line-height: 35px;
   text-align: center;
-  margin: 30px 0 0 0px;
+  margin: 32px 0 0 0px;
+  letter-spacing: 0.3px;
 }
 .hero__content-trade {
   background: #1B1B1B;
@@ -745,55 +751,76 @@ h6 {
 }
 
 .samurai {
-  margin: 105px 0 0 0;
+  margin: 105px 0 50px 0;
 }
 .samurai__content {
   display: flex;
 }
-.samurai__content .samurai__content__left .content__left-img {
+.samurai__content__left .content__left-img {
   position: relative;
 }
-.samurai__content .samurai__content__left .content__left-img .content__left-binance {
+.samurai__content__left .content__left-img .content__left-binance {
   position: absolute;
-  top: 46px;
-  right: 47px;
+  top: 47px;
+  right: 27px;
 }
-.samurai__content .samurai__content__left .content__left-img .content__left-samurai {
+.samurai__content__left .content__left-img .content__left-samurai {
   position: relative;
-  left: -10px;
+  left: 9px;
 }
-.samurai__content .samurai__content__right {
+.samurai__content__left .samurai__content-next {
+  display: flex;
+  justify-content: end;
+  margin: -33px -20px 0 0px;
+}
+.samurai__content__right {
   display: flex;
   margin: 189px 0 0 82px;
 }
-.samurai__content .samurai__content__right .samurai__list__colum .samurai__list__title {
+.samurai__content__right .samurai__list__colum .samurai__list__title {
   font-family: "Orbitron";
   font-size: 90px;
   font-weight: 700;
   line-height: 112px;
   text-transform: uppercase;
   max-width: 415px;
+  margin: 0 0 0 19px;
 }
-.samurai__content .samurai__content__right .samurai__list__colum ul {
-  margin: 40px 0 0 -55px;
+.samurai__content__right .samurai__list__colum ul {
+  margin: 37px 0 0 -27px;
 }
-.samurai__content .samurai__content__right .samurai__list__colum ul li {
-  width: 455px;
-  padding: 0 0 20px 0;
+.samurai__content__right .samurai__list__colum ul li {
+  display: flex;
+  padding: 0 0 13px 0;
 }
-.samurai__content .samurai__content__right .samurai__list__colum ul li p {
+.samurai__content__right .samurai__list__colum ul li p {
   font-size: 20px;
   font-weight: 500;
   line-height: 23px;
   text-align: right;
+  color: #C3C3C3;
 }
-.samurai__content .samurai__content__right .samurai__list__colum ul .list__item-arrow {
-  width: 50px;
+.samurai__content__right .samurai__list__colum ul li p span {
+  color: #FFFFFF;
 }
-.samurai__content .samurai__content__right .samurai__list-arrow {
-  padding: 0 0 0 36px;
-  margin: 120px 0 0 30px;
+.samurai__content__right .samurai__list__colum ul li::after {
+  content: "←";
+  font-size: 78px;
+  height: 40px;
+  padding: 0 0 100px 13px;
+  text-align: center;
+  margin: -32px 0 0 6px;
 }
-.samurai__content .samurai__content__right .samurai__list-arrow .list__items-arrow .list__item-arrow {
-  padding: 0 0 60px 0;
+.samurai__content__right .samurai__list__colum ul li:nth-child(2) {
+  padding: 10px 0 25px 0;
+}
+.samurai__content__right .samurai__list__colum ul li:nth-child(3) {
+  padding: 10px 0 42px 0;
+}
+.samurai__content__right .samurai__list__colum ul .list__item-xl {
+  width: 550px;
+}
+.samurai__content__right .samurai__list__colum ul .list__item-xs {
+  width: 500px;
+  margin: 0 0 0 50px;
 }

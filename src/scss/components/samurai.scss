@@ -1,32 +1,40 @@
 .container{
     padding: 0 200px;
+    // width: 1429px;
+    // margin: 0 auto;
+    
 }
 
 .samurai{
-    margin: 105px 0 0 0;
+    margin: 105px 0 50px 0;
     &__content{
         display: flex;
 
-        .samurai__content__left{
+        &__left{
 
             .content__left-img{
                 position: relative;
 
                 .content__left-binance{
                     position: absolute;
-                    top: 46px;
-                    right: 47px;
+                    top: 47px;
+                    right: 27px;
                 
                 }
 
                 .content__left-samurai{
                     position: relative;
-                    left: -10px;
+                    left: 9px;
                 }
+            }
+            .samurai__content-next{
+                display: flex;
+                justify-content: end;
+                margin: -33px -20px 0 0px
             }
         }
         
-        .samurai__content__right{
+        &__right{
             display: flex;
             margin: 189px 0 0 82px;
 
@@ -40,44 +48,69 @@
                     // text-align: left;
                     text-transform: uppercase;
                     max-width: 415px;
+                    margin: 0 0 0 19px;
                 }
 
                 ul{
-                    margin: 40px 0 0 -55px;
+                    margin: 37px 0 0 -27px;
                     
                     li{
-                        width: 455px;
-                        padding:  0 0 20px 0;
+                        display: flex;
+                        
+                        padding:  0 0 13px 0;
                         p{
                             
                             font-size: 20px;
                             font-weight: 500;
                             line-height: 23px;
                             text-align: right;
-
+                            color: #C3C3C3;
                             span{
+                                color: $BaseColor;
                                 
 
                             }
+                            
+                        }
+                        
+                        &::after{
+                            content: '←';
+                            font-size: 78px;
+                            height: 40px;
+                            padding: 0 0 100px 13px;
+                            text-align: center;
+                            margin: -32px 0 0 6px;
+                            
+                        }
+                        
+
+                        &:nth-child(2){
+                            padding: 10px 0 25px 0;
+                        }
+
+                        &:nth-child(3){
+                            padding: 10px 0 42px 0;
                         }
                     }
-                    .list__item-arrow{
-                        width: 50px;
-                    }
-                }
-            }
-            .samurai__list-arrow{
-                padding: 0 0 0 36px;
-                margin: 120px 0 0 30px ;
-                .list__items-arrow{
 
-                    .list__item-arrow{
-                        padding: 0 0 60px 0;
+                    .list__item-xl{
+                        width: 550px;
+                    }
+
+                    .list__item-xs{
+                        width: 500px;
+                        margin:  0 0 0 50px;
                     }
                 }
             }
+            
         }
     }
         
     
+}
+
+
+@media (max-width: 1024px){
+
 }
