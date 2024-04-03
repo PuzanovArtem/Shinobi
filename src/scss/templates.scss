@@ -26,6 +26,21 @@
 
 }
 
+.title {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 94px;
+    color: $BaseColor;
+    
+    span {
+        // font-family: $fontFamileSecond;
+        color: $Blackcolor;
+        background-color: $YellowColor;
+        // padding: 0 20px;
+        padding: 5px 25px 5px 17px;
+        margin-left: -13px;
+    }
+}
 
 
 @media (max-width: 1024px){

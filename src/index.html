@@ -12,7 +12,7 @@
             @@include('html/hero.html',{})
             @@include('html/scout.html',{})
             @@include('html/samurai.html',{})
-            @@include('html/steps.html',{})
+            @@include('html/working.html',{})
         </main>
             
         
@@ -20,9 +20,16 @@
         
     </div>
     
-    
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script> -->
     <script src="js/app.min.js"></script>
-    <script  src="js/script.js"></script>
+    <script  src="../js/script.js"></script>
     
     <script>   //burger
         const burger = document.querySelector('.burger');
@@ -49,6 +56,25 @@
         }
 
         navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+    </script>
+
+    <script> // working
+        $(function () {
+            let workingItems = $(".working__item")
+            workingItems.mouseover(function () {
+                $(".working__item-text").removeClass("working__item-text-active")
+                $(this).find(".working__item-text").addClass("working__item-text-active")
+                $(".working__item-number").removeClass("working__item-number-active")
+                $(this).find(".working__item-number").addClass("working__item-number-active")
+                $(".working__item-box").removeClass("working__item-box-active")
+                $(this).find(".working__item-box").addClass("working__item-box-active")
+            });
+            $(".backtests__slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1
+            })
+        });
 
     </script>
 </body>
