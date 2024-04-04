@@ -43,6 +43,7 @@
 }
 
 
+
 @media (max-width: 1024px){
 
 }
@@ -67,6 +68,22 @@
     
         }
     
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        color: $BaseColor;
+        
+        span {
+            // font-family: $fontFamileSecond;
+            color: $Blackcolor;
+            background-color: $YellowColor;
+            // padding: 0 20px;
+            padding: 0px 5px 0px 10px;
+            margin-left: -5px;
+        }
     }
 }
 
