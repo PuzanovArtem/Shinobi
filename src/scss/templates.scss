@@ -27,18 +27,22 @@
 }
 
 .title {
+    // font-family: $fontFamileSecond;
+    font-family: 'Orbitron', sans-serif;
     font-size: 75px;
     font-weight: 700;
     line-height: 94px;
+    text-transform: uppercase;
     color: $BaseColor;
     
     span {
         // font-family: $fontFamileSecond;
+        font-family: 'Orbitron', sans-serif;
         color: $Blackcolor;
         background-color: $YellowColor;
         // padding: 0 20px;
-        padding: 5px 25px 5px 17px;
-        margin-left: -13px;
+        padding: 5px 0px 5px 20px;
+        margin-left: -20px;
     }
 }
 
