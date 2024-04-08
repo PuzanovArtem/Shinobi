@@ -1,16 +1,16 @@
 .functional__container{
-    max-width: 1190px;
-    
+    max-width: 1180px;
+    padding: 0;
 }
 
 .functional{
     background: $GrayColor;
-    padding: 100px 0 0 0;
+    padding: 100px 0 40px 0;
 
     &__content{
 
         &__title{
-            margin: 6px 0 0 0;
+            margin: 6px 0 0 7px;
         }
 
         &__text{
@@ -27,28 +27,28 @@
                 font-weight: 600;
                 text-align: center;
                 color: $YellowColor;
-                padding-top: 11px;
+                padding: 15px 0 0 7px;
             }
         }
         
-        // &__list-wrapper{
-        //     background: #161618;
-        //     position: absolute;
-        //     box-shadow: 0px 4px 28px 0px #00000085;
+        &__list-wrapper{
+            background: #161618;
+            position: absolute;
+            box-shadow: 0px 4px 28px 0px #00000085;
 
-        //     width: 100%;
-        //     height: 158px;
-        //     left: 0;
-        //     // top: 4000px;
-        // }
+            width: 100%;
+            height: 158px;
+            left: 0;
+            top: 4175px;
+        }
 
-        // .second-wrapper {
-        //     top: 350px;
-        // }
+        .second-wrapper {
+            top: 4367px;
+        }
           
-        // .third-wrapper {
-        //     top: 550px;
-        // }
+        .third-wrapper {
+            top: 4559px;
+        }
 
         .functional__list{
             display: grid;
@@ -68,7 +68,7 @@
                 flex-direction: column;
                 align-items: center;
                 padding-right: 20px;
-
+                width: 230px;
                 img{
                     margin: 35px 0 0  0;
                 }
@@ -76,6 +76,7 @@
                 &-text{
                     font-size: 22px;
                     line-height: 26px;
+                    width: 230px;
                 }
 
                 &::after {
@@ -98,25 +99,55 @@
                 
             }
 
-            .functional__list__item:nth-child(2) 
-            .functional__list__item-text {
-                max-width: 330px ;
-            }
-              
-            .functional__list__item:nth-child(4) 
-            .functional__list__item-text {
-                max-width: 200px;
-            }
-              
-            .functional__list__item:nth-child(5) 
-            .functional__list__item-text{
-                max-width: 200px;
-            }
-              
-            .functional__list__item:nth-child(7) 
-            .functional__list__item-text{
-                max-width: 200px;
-            }
+            .functional__list__item:nth-child(2) {
+                width: 330px;
+                .functional__list__item-text {
+                    width: 330px ;
+                }
+            }   
+            
+            .functional__list__item:nth-child(3) {
+                width: 250px;
+                .functional__list__item-text {
+                    width: 250px ;
+                }
+            } 
+            
+            .functional__list__item:nth-child(6) {
+                width: 235px;
+                .functional__list__item-text {
+                    width: 235px ;
+                }
+            } 
+            .functional__list__item:nth-child(4),
+            .functional__list__item:nth-child(5),
+            .functional__list__item:nth-child(7) {
+                width: 200px;
+                .functional__list__item-text {
+                    width: 200px ;
+                }
+            } 
+
+            .functional__list__item:nth-child(9) {
+                width: 270px;
+                .functional__list__item-text {
+                    width: 270px ;
+                }
+            } 
+
+            .functional__list__item:nth-child(2) {
+                width: 330px;
+                .functional__list__item-text {
+                    width: 330px ;
+                }
+            } 
+
+            .functional__list__item:nth-child(2) {
+                width: 330px;
+                .functional__list__item-text {
+                    width: 330px ;
+                }
+            } 
             
 
             

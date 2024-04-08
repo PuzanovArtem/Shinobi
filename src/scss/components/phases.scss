@@ -1,0 +1,128 @@
+.phases__container{
+
+}
+
+.phases{
+    background: $GrayColor;
+    padding: 52px 0 0 0px;
+    &__content{
+
+        &__first{
+            // padding-top: 100px;
+            
+            .content__first__wrapper{
+                justify-content: space-around;
+
+                h2{
+                    margin: 0 5px 0 0;
+                } 
+                
+                p{
+                    max-width: 498px;
+                    text-align: right;
+                }
+                
+            }
+
+            hr{
+                max-width: 716px;
+                margin-left: 0;
+                margin-top: 25px;
+                border: 1px solid #737373
+            }
+        }
+
+        &__second{
+            padding: 60px 0 0 0;
+            .content__second__wrapper{
+                justify-content: space-between;
+                h2{
+                    margin:  0 10px 0 0;
+                
+                }
+
+                p{
+                    text-align: left;
+                    max-width: 388px;
+                    padding: 0 0 0 5px;
+                }
+                .phases__text__mob{
+                    display: none;
+                    text-align: right;
+                }
+                
+            }
+
+            hr{
+                max-width: 784px;
+                margin: 25px 0 0 380px ;
+                border: 1px solid #737373
+            }
+        }
+
+        .content__first__wrapper,
+        .content__second__wrapper,
+        .phases__content__btn__wrapper{
+            display: flex;
+            
+            align-items: center;
+        }
+
+        .phases__title{
+            font-family: $fontFamileSecond;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 85px;
+            text-align: left;
+            text-transform: uppercase;
+
+            span{
+                color: $YellowColor;
+            }
+        } 
+
+        .phases__text{
+            font-size: 22px;
+            line-height: 25px;
+            
+
+            span{
+                color:  #C3C3C3;
+            }
+                    
+        }
+
+        .phases__content__btn__wrapper{
+            padding: 50px 0 0 0;
+            margin: 0 0 0px 154px;
+            
+            .phases__btn{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-left: 54px;
+
+                img{
+                    width: 209px;
+                    height: 194px;
+                    background-color: $GrayColor;
+                }
+                span{
+                    position: absolute;
+                    z-index: 2;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    color: $Blackcolor;
+                }
+            }
+        }
+        .phases__content-next{
+            margin: -24px 0 0 0;
+        }
+    }
+
+}
