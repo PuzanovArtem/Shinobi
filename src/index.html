@@ -17,6 +17,9 @@
             @@include('html/functional.html',{})
             @@include('html/phases.html',{})
             @@include('html/product-for.html',{})
+            @@include('html/campaign.html',{})
+            @@include('html/result.html',{})
+            @@include('html/analysis.html',{})
         </main>
             
         @@include('html/footer.html', {})   
@@ -33,7 +36,7 @@
     ></script> -->
     <script src="js/app.min.js"></script>
     <script  src="../js/script.js"></script>
-    
+    <script src="../js/slider.js"></script>
     <script>   //burger
         const burger = document.querySelector('.burger');
         const content = document.querySelector('.header__content');
@@ -79,6 +82,24 @@
             })
         });
 
+    </script>
+    <script> // analysis
+        const slider = document.querySelector('.swiper-container');
+
+        let mySwiper = new Swiper(slider, {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
     </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 }
 
 .product-for{
-    padding: 90px 0 0 0;
+    padding: 70px 0 50px 0;
     &__content{
 
         // &-title{
@@ -22,30 +22,67 @@
 
         &__wrapper{
             display: flex;
+            padding: 94px 0 18px 0;
+            justify-content: space-between;
 
             .content__wrapper__left,
             .content__wrapper__right{
-                position: relative;
-                z-index: 3;
+                
                 text-align: center;
-                margin-top: 27px;
-                img{
-                    margin: 0 auto 0;
+                margin-bottom: 100px;
+                margin: 0px 0 100px 0;
+                position: relative;
+                width: 454px;
+                height: 396px;
+                border-radius: 20px;
+                overflow: hidden;
+                background: linear-gradient(180deg, rgba(32, 32, 32, 0.051), rgba(0, 0, 0, 0)),
+                linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0));
+                box-shadow: -26.83333396911621px 26.83333396911621px 26.83333396911621px 0px
+                    rgba(255, 255, 255, 0) inset;
+                z-index: 2;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 450px;
+                    height: 390px;
+                    top: 2px;
+                    left: 2px;
+                    border: none;
+                    background: $Blackcolor;
+                    border-radius: 20px;
+                    background-clip: padding-box;
+                    z-index: 1;
                 }
-                h3{
-                    font-size: 35px;
-                    font-weight: 600;
-                    color: $YellowColor;
-                    margin-top: 22px;
+                .wrapper__inner{
+                    position: relative;
+                    z-index: 3;
+                    text-align: center;
+                    margin-top: 27px;
+                    img{
+                        margin: 0 auto 0;
+    
+                    }
+                    h3{
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: $YellowColor;
+                        margin-top: 22px;
+                    }
+                    p{
+                        max-width: 360px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        margin: 29px auto;
+                    }
                 }
-                p{
-                    max-width: 360px;
-                    font-size: 22px;
-                    font-weight: 500;
-                    line-height: 26px;
-                    margin: 29px auto;
-                }
+                
             }
+        }
+        .product-for__content-next{
+
         }
     }
 }
