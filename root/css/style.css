@@ -2040,3 +2040,110 @@ h6 {
   color: #BABABA;
   font-style: italic;
 }
+.services .services__content .services__content-btn {
+  margin: 50px auto 53px;
+}
+
+.video .video__line {
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  width: 100%;
+  margin: 39px 0 0 0;
+}
+.video .video__content {
+  margin: 87px 0 0 0;
+}
+.video .video__content .video__title {
+  font-size: 75px;
+  line-height: 94px;
+  letter-spacing: -2px;
+  margin: 0 0 0 5px;
+}
+.video .video__content .video__text {
+  margin-top: 23px;
+  font-size: 26px;
+  line-height: 155.4%;
+  margin: 0 0 81px 0;
+  padding: 21px 0 0 5px;
+}
+.video .video__content .video-wrapper {
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.video .video__content .video-wrapper iframe,
+.video .video__content .video-wrapper object,
+.video .video__content .video-wrapper embed {
+  /* margin-top: 81px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  width: 1160px;
+  height: 488px;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+}
+.video .video__content-next {
+  margin: 62px 0 30px 0;
+}
+
+.instraction .instraction__content {
+  margin-top: 91px;
+}
+.instraction .instraction__content .instraction__title {
+  font-size: 59px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.instraction .instraction__content .instraction__title span {
+  background-color: #EAFC52;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.instraction .instraction__content .instraction__list {
+  margin-top: 95px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px 20px;
+}
+.instraction .instraction__content .instraction__list li .instraction__item-wrapper {
+  width: 470px;
+  height: 251px;
+  border-radius: 20px;
+  background: rgb(29, 28, 31);
+  position: relative;
+  overflow: hidden;
+}
+.instraction .instraction__content .instraction__list li .instraction__item-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgb(52, 51, 57);
+}
+.instraction .instraction__content .instraction__list li .instraction__item-wrapper img {
+  margin: 60px auto 0;
+  width: 75px;
+  height: 75px;
+}
+.instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 298px;
+  /* font-size: 22px; */
+  /* line-height: 26px;
+    max-width: 442px; */
+  text-align: center;
+  margin: 13px auto 0;
+}

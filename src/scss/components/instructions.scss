@@ -1,0 +1,76 @@
+
+.instraction{
+
+    .instraction__content {
+        margin-top: 91px;
+
+        .instraction__title {
+            font-size: 59px;
+            line-height: 90px;
+            letter-spacing: -2px;
+            text-align: center;
+
+            span {
+                background-color: $YellowColor;
+                // color: var(--primery-bg-color);
+                padding-left: 20px;
+                padding-right: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .instraction__list {
+            margin-top: 95px;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 20px 20px;
+
+            li{
+
+                .instraction__item-wrapper{
+                     width: 470px;
+                     height: 251px; 
+                    // width: 310px;
+                    // height: 161px;
+                    border-radius: 20px;
+                    background: rgb(29, 28, 31);
+                    position: relative;
+                    overflow: hidden;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: -90px;
+                        right: -40px;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background: rgba(52, 51, 57, 1);
+                    }
+
+                    img{
+                        margin: 60px auto 0;
+                        width: 75px;
+                        height: 75px;
+                    }
+                    .instraction__text {
+                        font-size: 14px;
+                        line-height: 16px;
+                        max-width: 298px;
+                        /* font-size: 22px; */
+                        /* line-height: 26px;
+                          max-width: 442px; */
+                        text-align: center;
+                        margin: 13px auto 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+}
