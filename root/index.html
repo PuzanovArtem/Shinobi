@@ -507,40 +507,114 @@
         </p>
     </div>
 </section>
-            <section class="analysis">
-    <div class="slider-container container">
-		<div class="slider-top">
-			<h1>РЕЗУЛЬТАТЫ БЭК-ТЕСТОВ:</h1>
-			<!-- <div class="slider-buttons">
-				<button class="swiper-button-prev"></button>
-				<button class="swiper-button-next"></button>
-			</div> -->
-		</div>
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide card">
-                    <img src="img/analysis-1.png" alt="">
-                </div>
-				<div class="swiper-slide card">
-                    <img src="img/analysis-2.png" alt="">
-                </div>
-				<div class="swiper-slide card">
-                    <img src="img/analysis-3.png" alt="">
-                </div>
-				<div class="swiper-slide card">
-                    <img src="img/analysis-4.png" alt="">
-                </div>
-                <div class="swiper-slide card">
-                    <img src="img/analysis-5.png" alt="">
-                </div>
-			</div>
-			<div class="swiper-pagination"></div>
-		</div>
+            <section class="analysis" >
+
+	<div class="container">
+		<h2 class="analysis_title title">РЕЗУЛЬТАТЫ БЭК-ТЕСТОВ:</h2>
 	</div>
+   <div class="analysis__content"> 
+		<div class="swiper analysis-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./img/analysis-1.png" alt="screenshot" width="841" height="433">
+					
+				</div>
+
+				<div class="swiper-slide">
+					<img src="./img/analysis-2.png" alt="screenshot" width="841" height="433">
+				</div>
+
+				<div class="swiper-slide">
+					<img src="./img/analysis-3.png" alt="screenshot" width="841" height="433">
+				</div>
+
+				<div class="swiper-slide">
+					<img src="./img/analysis-4.png" alt="screenshot" width="841" height="433">
+				</div>
+
+				<div class="swiper-slide">
+					<img src="./img/analysis-5.png" alt="screenshot" width="841" height="433">
+				</div>
+			</div>
+		</div>
+   </div>
+
+   <div class="hero__content-next next">
+		<a href="">
+			<img src="img/arrow-next.svg" alt="">
+		</a>
+	</div>
+   
 </section>
 
+            <section class="services" >
+    <div class="container services__container">
+      <div class="services__content"> <!--inner-->
+        <h2 class="services__content__title title">
+          КАКИЕ <span>ЦЕНЫ И УСЛОВИЯ?</span>
+        </h2>
 
-<!--Слайдер с увеличеный слайдом в центре -->
+        <p class="services__content__text">
+          Все очень просто-
+          <span>платите за подписку и пользуйтесь в удовольствие.</span>
+          Никаких скрытых условий и платежей.
+        </p>
+
+        <div class="services__block-outside">
+          <div class="services__block-wrapper">
+            <div class="services__block">
+              <h3 class="services__block-title">ЕДИНЫЙ ТАРИФ</h3>
+              <ul class="services__list">
+                <li class="services__item">
+                  <p>доступ к программному обеспечению с телефона и компьютера</p>
+                </li>
+
+                <li class="services_item">
+                  <p>доступ к боту</p>
+                </li>
+
+                <li class="services__item">
+                 <p> доступ к закрытому Телеграм-чату</p>
+                </li>
+
+                <li class="services__item">
+                  <p>доступ к стратегиям с возможностью редактирования и ведения сделок вручную</p>
+                </li>
+
+                <li class="services__item">
+                  <p>доступ к автоматизированным стратегиям</p>
+                </li>
+
+                <li class="services__item">
+                  <p>без комиссий за сделки</p>
+                </li>
+
+              </ul>
+
+              <div class="services__sale-wrapper">
+                <p class="services__sale-text">СКИДКА -50% НА ПЕРВЫЙ МЕСЯЦ</p>
+              </div>
+              <p class="services__old">50$/день</p>
+              <p class="services__new">25$/день</p>
+              <p class="services__desc">
+                *полная сумма при оплате за месяц = 750$
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="hero__content-btn registration-btn">
+          <span>РЕГИСТРАЦИЯ</span>
+        </button>
+      
+        <div class="services__content-next next">
+            <a href="">
+                <img src="img/arrow-next.svg" alt="">
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
         </main>
             
         <footer class="footer">
@@ -554,6 +628,7 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
@@ -608,21 +683,38 @@
 
     </script>
     <script> // analysis
-        const slider = document.querySelector('.swiper-container');
-
-        let mySwiper = new Swiper(slider, {
-            slidesPerView: 3,
-            spaceBetween: 10,
-            centeredSlides: true,
+        const swiper = new Swiper('.analysis-slider', {
             loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 0,
+                slideShadows: false,
+            },   
+        spaceBetween: 25,
+            autoplay: {
+                delay: 2000,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            
+            breakpoints: {
+            
+            350: {
+            spaceBetween: 40
             },
+        
+            480: {
+            spaceBetween: 50
+            },
+        
+            640: {
+            spaceBetween: 90
+                },
+            
+            1024: {
+            spaceBetween: 140
+            }
+        }
         })
     </script>
 </body>

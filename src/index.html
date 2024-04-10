@@ -20,6 +20,7 @@
             @@include('html/campaign.html',{})
             @@include('html/result.html',{})
             @@include('html/analysis.html',{})
+            @@include('html/services.html',{})
         </main>
             
         @@include('html/footer.html', {})   
@@ -30,6 +31,7 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
@@ -84,21 +86,38 @@
 
     </script>
     <script> // analysis
-        const slider = document.querySelector('.swiper-container');
-
-        let mySwiper = new Swiper(slider, {
-            slidesPerView: 3,
-            spaceBetween: 10,
-            centeredSlides: true,
+        const swiper = new Swiper('.analysis-slider', {
             loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 0,
+                slideShadows: false,
+            },   
+        spaceBetween: 25,
+            autoplay: {
+                delay: 2000,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            
+            breakpoints: {
+            
+            350: {
+            spaceBetween: 40
             },
+        
+            480: {
+            spaceBetween: 50
+            },
+        
+            640: {
+            spaceBetween: 90
+                },
+            
+            1024: {
+            spaceBetween: 140
+            }
+        }
         })
     </script>
 </body>

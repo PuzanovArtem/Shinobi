@@ -1,16 +1,33 @@
-const slider = document.querySelector('.swiper-container');
-
-let mySwiper = new Swiper(slider, {
-	slidesPerView: 3,
-	spaceBetween: 10,
-	centeredSlides: true,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+const swiper = new Swiper('.analysis-slider', {
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        slideShadows: false,
+    },   
+  spaceBetween: 25,
+     autoplay: {
+           delay: 2000,
+     },
+     
+    breakpoints: {
+    
+    350: {
+      spaceBetween: 40
+    },
+   
+    480: {
+      spaceBetween: 50
+    },
+   
+    640: {
+      spaceBetween: 90
+         },
+    
+    1024: {
+      spaceBetween: 140
+    }
+  }
 })

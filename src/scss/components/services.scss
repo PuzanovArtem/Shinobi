@@ -1,0 +1,162 @@
+.services__container{
+
+}
+
+.services{
+  
+  .services__content{
+    margin: 360px 0 0 0;
+
+    &__title{
+      margin: 0 0 0 5px;
+
+    } 
+
+    &__text{
+      font-size: 26px;
+      line-height: 35px;
+      text-align: center;
+      max-width: 719px;
+      margin: 25px auto 0;
+
+      span{
+        color: #888888;
+      }
+    }
+    .services__block-outside{
+      margin: 38px auto 0;
+      position: relative;
+      z-index: 2;
+      width: 604px;
+      height: 832px;
+      border-radius: 20px;
+      background:linear-gradient(180deg, #ffffff 30%, #ebfc56 100%) ;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 599px;
+        height: 830px;
+        bottom: 1px;
+        left: 1px;
+        z-index: 1px;
+        background: $YellowColor;
+        border-radius: 20px;
+      }
+
+      .services__block-wrapper{
+        position: relative;
+        top: 20px;
+        margin: 0 16px;
+        z-index: 3;
+        width: 569px;
+        height: 788px;
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        background-clip: padding-box;
+        box-shadow: inset -35.9px 35.9px 35.9px 0px rgba(255, 255, 255, 0.03), 
+        inset 35.9px -35.9px 35.9px 0px rgba(0, 0, 0, 0.03);
+
+        &::before{
+          content: "";
+          position: absolute;
+          width: 564px;
+          height: 786px;
+          bottom: 2px;
+          left: 2px;
+          z-index: 4;
+          background: $Blackcolor;
+          border-radius: 20px;
+          box-shadow: inset -35.9px 35.9px 35.9px 0px rgba(255, 255, 255, 0.03),
+          inset 35.9px -35.9px 35.9px 0px rgba(0, 0, 0, 0.03);
+        }
+        
+        .services__block{
+          z-index: 5;
+          position: relative;
+          padding: 64px 0 0 0;
+          text-align: center;
+
+          &-title{
+            font-size: 45px ;
+            font-weight: 600;
+            line-height: 69px;
+            color: $YellowColor;
+          }
+
+          .services__list{
+            margin: 19px 0 0 25px;
+            text-align: left;
+
+            .services__item{
+              display: flex;
+              align-items: center;
+              margin: 0 0 18px 0;
+              font-size: 20px;
+              line-height: 23px;
+              position: relative;
+
+              p{
+                max-width: 500px;
+              }
+
+              &::before{
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-color: $YellowColor;
+                border-radius: 50%;
+                margin: 0 10px 0 0;
+              }
+            }
+
+          }
+
+          .services__sale-wrapper{
+            margin: 53px 0 0 0;
+            padding: 17px 0 0 0;
+            color: $YellowColor;
+            font-style: italic;
+            height: 64px;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 29px;
+            background: linear-gradient(180deg, #1b1b1b 0%, rgba(27, 27, 27, 0) 100%);
+          }
+          .services__old{
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 155.4%;
+            text-decoration: line-through;
+            margin-top: 11px;
+          }
+
+          .services__new {
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 69px;
+          }
+          
+          .services__desc{
+            margin-top: 12px;
+            font-size: 20px;
+            line-height: 31px;
+            color:  #BABABA;
+            font-style: italic;
+
+          }
+
+        }
+
+
+
+      }
+    }
+
+
+  }
+
+
+}
