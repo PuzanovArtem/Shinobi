@@ -2,13 +2,14 @@
 .instraction{
 
     .instraction__content {
-        margin-top: 91px;
+        margin: 84px 0 20px 0 ;
 
         .instraction__title {
             font-size: 59px;
             line-height: 90px;
             letter-spacing: -2px;
             text-align: center;
+            margin: 0 0 0 -26px;
 
             span {
                 background-color: $YellowColor;
@@ -21,19 +22,17 @@
         }
 
         .instraction__list {
-            margin-top: 95px;
+            margin-top: 90px;
             display: grid;
             justify-content: center;
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-            gap: 20px 20px;
+            grid-template-columns: repeat(auto-fit, minmax(547px, 1fr));
+            gap: 71px 68px;
 
             li{
 
                 .instraction__item-wrapper{
-                     width: 470px;
-                     height: 251px; 
-                    // width: 310px;
-                    // height: 161px;
+                    height: 259px; 
+                    text-align: center;
                     border-radius: 20px;
                     background: rgb(29, 28, 31);
                     position: relative;
@@ -51,23 +50,39 @@
                     }
 
                     img{
-                        margin: 60px auto 0;
-                        width: 75px;
-                        height: 75px;
+                        margin: 0px auto 0;
+                        
                     }
+
+                    .item-wrapper__img-link{
+                        margin: 17px auto 10px;
+                    }
+
+
                     .instraction__text {
-                        font-size: 14px;
-                        line-height: 16px;
                         max-width: 298px;
-                        /* font-size: 22px; */
-                        /* line-height: 26px;
-                          max-width: 442px; */
+                        font-size: 22px; 
+                        line-height: 26px;
+                        max-width: 442px; 
                         text-align: center;
                         margin: 13px auto 0;
+                    }
+
+                    .instraction__text-three{
+                        width: 372px;
                     }
                 }
 
             }
+
+            .instructions__btn{
+                margin: auto;
+                
+            }
+        }
+
+        .instructions__content-next{
+            margin: 20px 0 0 0;
         }
     }
 

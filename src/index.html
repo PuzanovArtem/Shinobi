@@ -23,7 +23,7 @@
             @@include('html/services.html',{})
             @@include('html/video.html',{})
             @@include('html/instructions.html',{})
-            
+            @@include('html/disclaimer.html',{})
         </main>
             
         @@include('html/footer.html', {})   
@@ -123,6 +123,40 @@
         }
         })
     </script>
+
+<script> // footer
+    document.querySelectorAll('.footer-menu__titel-section').forEach((item) => {
+         item.addEventListener('click', (event) => {
+             event.preventDefault();
+             const parent = item.parentNode;
+             const arrow = item.querySelectorAll('.footer-menu__arrow-menu');
+
+             if (parent.classList.contains('footer-menu__colum_active')){
+                 parent.classList.remove('footer-menu__colum_active');
+                 arrow.forEach((arrowItem) => {
+                     arrowItem.classList.remove('footer-menu__arrow-menu_active');
+                 });
+             } else {
+                 document
+                     .querySelectorAll('.footer-menu__colum')
+                     .forEach((child) => {
+                         child.classList.remove('footer-menu__colum_active');
+                     });
+                         
+                 document
+                     .querySelectorAll('.footer-menu__arrow-menu')
+                     .forEach((arrowItem) => {
+                         arrowItem.classList.remove('footer-menu__arrow-menu_active');
+                     });
+         
+                 parent.classList.add('footer-menu__colum_active');
+                 arrow.forEach((arrowItem) => {
+                     arrowItem.classList.add('footer-menu__arrow-menu_active');
+                 });
+             } 
+         });
+     });
+ </script>
 </body>
 </html>
 

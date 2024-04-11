@@ -1,0 +1,23 @@
+.disclaimer{
+
+
+    .disclaimer__content{
+        margin: 64px 0 30px 0;
+        text-align: center;
+        &__title{
+            color: rgb(179, 0, 0);
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 47px;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            margin: 21px auto 0;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            max-width: 1047px;
+        }
+    }
+}
