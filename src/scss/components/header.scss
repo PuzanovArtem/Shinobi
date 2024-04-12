@@ -10,10 +10,10 @@
             transition: 0.5s;
             align-items: center;
         
-            &__logo{
+            .header__logo{
                 display: flex;
                 align-items: center;
-                margin: 0 0 0 36px;
+                margin: 0 0 0 0px;
                 
                 
             }
@@ -23,7 +23,7 @@
                 flex-basis: 100%;
                 align-items: center;
                 
-                padding:  10px 0 0 92px;
+                padding:  0px 0 0 92px;
                
         
                 nav{
@@ -130,7 +130,7 @@
 
             .header__wrapper{
 
-                &__logo{
+                .header__logo{
                     margin:  0 0 0 15px;
                 }
         
@@ -244,7 +244,7 @@
                 align-items: center;
                 height: 110px;
         
-                &__logo{
+                .header__logo{
                     margin: 5px 0 0 26px;
         
                     a{
@@ -322,9 +322,9 @@
                 display: flex;
                 align-items: center;
                 height: 61px;
-                padding: 10px 0 0 25px;
+                padding: 10px 0 0 11px;
         
-                &__logo{
+                .header__logo{
                     margin: 3px 0 0 33px;
         
                     a{
@@ -338,7 +338,7 @@
                 }
         
                 .burger{
-                    margin: 10px 60px 0 0;
+                    margin: 10px 45px 0 0;
         
                     .humb{
                         display: block;

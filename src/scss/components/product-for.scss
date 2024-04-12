@@ -25,6 +25,7 @@
             padding: 94px 0 18px 0;
             justify-content: space-between;
 
+            
             .content__wrapper__left,
             .content__wrapper__right{
                 
@@ -75,14 +76,199 @@
                         font-size: 22px;
                         font-weight: 500;
                         line-height: 26px;
-                        margin: 29px auto;
+                        margin: 29px auto 0;
                     }
                 }
                 
             }
         }
-        .product-for__content-next{
+    }
+}
+
+@media (max-width: 1200px){
+    .product-for{
+        padding: 70px 0 50px 0;
+        &__content{
+
+            &-title{
+                font-size: 65px;
+                line-height: 94px;
+            }
+
 
         }
-    }
+    }    
+
+
+
+
+}
+
+@media (max-width: 1024px){
+    .product-for{
+        padding: 70px 0 50px 0;
+        &__content{
+
+            &-title{
+                font-size: 45px;
+                line-height: 64px;
+            }
+
+            &__wrapper{
+                padding: 64px 0 18px 0;
+                justify-content: space-around;
+
+                .content__wrapper__left,
+                .content__wrapper__right{
+                    
+                    text-align: center;
+                    margin-bottom: 100px;
+                    margin: 0px 0 100px 0;
+                    position: relative;
+                    width: 300px;
+                    height: 291px;
+                    
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 450px;
+                        height: 390px;
+                        top: 2px;
+                        left: 2px;
+                        border: none;
+                        background: $Blackcolor;
+                        border-radius: 20px;
+                        background-clip: padding-box;
+                        z-index: 1;
+                    }
+                    .wrapper__inner{
+                        position: relative;
+                        z-index: 3;
+                        text-align: center;
+                        margin-top: 27px;
+                        img{
+                            width: 86px;
+                            height: 86px;
+        
+                        }
+                        h3{
+                            font-size: 20px;
+                            margin-top: 22px;
+                        }
+                        p{
+                            max-width: 235px;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            margin: 29px auto;
+                        }
+                    }
+                    
+                }
+            }
+
+        }
+    }    
+
+
+
+
+}
+
+@media (max-width: 768px){
+    .product-for{
+        padding: 70px 0 50px 0;
+        &__content{
+
+            &-title{
+                font-size: 35px;
+                line-height: 50px;
+            }
+
+
+        }
+    }    
+
+
+
+
+}
+
+
+
+@media (max-width: 686px){
+    .product-for{
+        padding: 30px 0 50px 0;
+        &__content{
+
+            &-title{
+                font-size: 30px;
+                line-height: 37px;
+                padding: 0 0 0 37px;
+            }
+
+            &__wrapper{
+                display: block;
+                padding: 64px 0 18px 0;
+                
+
+    
+                .content__wrapper__left,
+                .content__wrapper__right{
+                    
+                    text-align: center;
+                    margin-bottom: 100px;
+                    margin: 0px 0 100px 0;
+                    position: relative;
+                    width: 300px;
+                    height: 291px;
+                    margin: 0 auto;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 450px;
+                        height: 390px;
+                        top: 2px;
+                        left: 2px;
+                        border: none;
+                        background: $Blackcolor;
+                        border-radius: 20px;
+                        background-clip: padding-box;
+                        z-index: 1;
+                    }
+                    .wrapper__inner{
+                        position: relative;
+                        z-index: 3;
+                        text-align: center;
+                        margin-top: 27px;
+                        img{
+                            width: 86px;
+                            height: 86px;
+        
+                        }
+                        h3{
+                            font-size: 20px;
+                            margin-top: 22px;
+                        }
+                        p{
+                            max-width: 235px;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            margin: 19px auto 0;
+                        }
+                    }
+                    
+                }
+                .content__wrapper__right{
+                    margin-top: 15px;
+                }
+            }
+
+        }
+    }    
+
+
+
+
 }

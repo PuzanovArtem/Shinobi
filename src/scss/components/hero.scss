@@ -8,13 +8,14 @@
                 font-family: $fontFamileSecond;
                 font-weight: 700;
                 font-size: 80px;
-                line-height: 60px;
+                line-height: 64px;
                 color: $YellowColor;
                 text-transform: uppercase;
                 max-width: 1030px !important;
-                margin: 0px 0 0  69px ;
+                margin: 0px 0 0  61px ;
                 padding: 0 0 0 0px;
                 text-align: center;
+                letter-spacing: 1px;
                 span{
                     font-family: $fontFamileSecond;
                     font-size: 57px;
@@ -80,7 +81,7 @@
                     font-size: 40px;
                     line-height: 35px;
                     margin: 0px auto;
-                    padding: 0 36px;
+                    padding: 0 25px;
                     
                     span{
                         font-size: 30px;

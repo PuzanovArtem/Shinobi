@@ -34,6 +34,7 @@
 
         &__second{
             padding: 60px 0 0 0;
+
             .content__second__wrapper{
                 justify-content: space-between;
                 h2{
@@ -64,7 +65,6 @@
         .content__second__wrapper,
         .phases__content__btn__wrapper{
             display: flex;
-            
             align-items: center;
         }
 
@@ -123,6 +123,280 @@
         .phases__content-next{
             margin: -24px 0 0 0;
         }
+    }
+
+}
+
+@media (max-width: 1200px){
+    .phases{
+        padding: 52px 0 20px 0px;
+        &__content{
+            
+            &__second{
+                padding: 45px 0 0 0;
+            }
+            .phases__title{
+                font-size: 48px;
+                line-height: 65px;
+            } 
+    
+            .phases__text{
+                font-size: 20px;
+                line-height: 22px;
+            }
+            
+            .phases__content__btn__wrapper{
+                
+                .phases__btn{
+    
+                    img{
+                        width: 189px;
+                        height: 174px;
+                    }
+                    span{
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 1024px){
+    .phases{
+        padding: 52px 0 20px 0px;
+
+        &__content{
+            
+            &__second{
+                padding: 45px 0 0 0;
+            }
+
+            .phases__title{
+                font-size: 38px;
+                line-height: 65px;
+            } 
+    
+            .phases__text{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            
+            .phases__content__btn__wrapper{
+                
+                img{
+                    width: 300px;
+                }
+
+                .phases__btn{
+    
+                    img{
+                        width: 169px;
+                        height: 154px;
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 898px){
+    .phases{
+        padding: 52px 0 20px 0px;
+
+        &__content{
+
+            &__first{
+                
+                .content__first__wrapper{
+    
+                    h2{
+                        margin: 0 5px 0 0;
+                    } 
+                    
+                    p{
+                        max-width: 498px;
+                        text-align: left;
+                    }
+                    
+                }
+    
+                hr{
+                    max-width: 516px;
+                    margin-left: 0;
+                    margin-top: 25px;
+                    border: 1px solid #737373
+                }
+            }
+
+            &__second{
+                padding: 45px 0 0 0;
+
+                .content__second__wrapper{
+                    justify-content: end;
+                    text-align: end;
+                    h2{
+                        margin:  0 10px 0 0;
+                        text-align: end;
+                    }
+
+                    p{
+                        display: none;
+                    }
+
+                    .phases__text__mob{
+                        display: block;
+                        text-align: end;
+                        width: 345px;
+
+                    }
+                    
+                }
+    
+                hr{
+                    max-width: 584px;
+                    margin: 25px 0 0 270px ;
+                    border: 1px solid #737373
+                }
+            }
+
+            .content__first__wrapper,
+            .content__second__wrapper{
+                display: block;
+            }
+
+            .phases__title{
+                font-size: 38px;
+                line-height: 65px;
+            } 
+    
+            .phases__text{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            
+            .phases__content__btn__wrapper{
+                margin: 0 0 0px 104px;
+                img{
+                    width: 200px;
+                }
+
+                .phases__btn{
+    
+                    img{
+                        width: 169px;
+                        height: 154px;
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 578px){
+    .phases{
+        padding: 54px 0 102px 0px;
+
+        &__content{
+
+            &__first{
+                
+                .content__first__wrapper{
+                    padding: 0 0 0 45px;
+                    h2{
+                        margin: 0 5px 6px 0;
+                    } 
+                    
+                    p{
+                        max-width: 498px;
+                        text-align: left;
+                    }
+                    
+                }
+    
+                hr{
+                    max-width: 350px;
+                    margin: 12px 0 0 45px;
+                }
+            }
+
+            &__second{
+                padding: 36px 30px 0 0;
+                
+                .content__second__wrapper{
+                    justify-content: end;
+                    text-align: end;
+                    h2{
+                        margin:  0 10px 4px 0;
+                        text-align: end;
+                    }
+
+                    p{
+                        display: none;
+                    }
+
+                    .phases__text__mob{
+                        display: block;
+                        text-align: end;
+                        width: 245px;
+                        margin: 0 0 0 101px;
+                    }
+                    
+                }
+    
+                hr{
+                    max-width: 350px;
+                    margin: 10px 0 0 -4px ;
+                }
+            }
+
+
+            .phases__title{
+                font-size: 30px;
+                line-height: 37px;
+            } 
+    
+            .phases__text{
+                font-size: 14px;
+                line-height: 16px;
+            }
+            
+            .phases__content__btn__wrapper{
+                margin: 0 0 0px 42px;
+                padding: 22px 0 0 0;
+                img{
+                    width: 167px;
+                }
+
+                .phases__btn{
+                    margin-left: 26px;
+                    img{
+                        width: 131px;
+                        height: 116px;
+                    }
+                    span{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    
     }
 
 }

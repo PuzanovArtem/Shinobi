@@ -60,3 +60,184 @@
         }
     }
 }
+
+
+@media (max-width: 1200px){
+
+    .campaign{
+
+        .campaign__content{
+            margin: 69px 0 0 5px;
+    
+            .campaign__desc{
+                font-size: 40px ;
+                line-height: 46px;
+            }
+    
+            .campaign__desc-spec{
+                font-size: 40px;
+                line-height: 50px;
+                text-align: end;
+                margin-right: 80px;            
+            }
+    
+            .campaign__title {
+                font-size: 125px;
+                line-height: 155px;
+                text-align: right;
+                margin-right: 80px;            
+            }
+    
+            .campaign__text{
+                font-size: 24px;
+                line-height: 155.4%;
+                margin-top: 40px;
+    
+    
+                &-second-span{
+                    border-radius: 20px;
+                    padding-right: 9px;
+                    padding-left: 9px;
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    .campaign{
+
+        .campaign__content{
+            margin: 69px 0 0 5px;
+    
+            .campaign__desc{
+                font-size: 30px ;
+                line-height: 35px;
+                
+            }
+    
+            .campaign__desc-spec{
+                font-size: 30px;
+                line-height: 39px;
+                text-align: end;     
+                margin:  0 60px 0 0;     
+            }
+    
+            .campaign__title {
+                font-size: 105px;
+                line-height: 135px;
+                text-align: right;
+                margin-right: 60px;            
+            }
+    
+            .campaign__text{
+                font-size: 18px;
+                line-height: 155.4%;
+                margin-top: 30px;
+    
+    
+                &-second-span{
+                    border-radius: 20px;
+                    padding-right: 9px;
+                    padding-left: 9px;
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .campaign{
+
+        .campaign__content{
+            margin: 58px 0 0 5px;
+    
+            .campaign__desc{
+                font-size: 25px ;
+                line-height: 30px;
+            }
+    
+            .campaign__desc-spec{
+                font-size: 25px;
+                line-height: 32px;
+                text-align: end;
+                margin:  0 60px 0 0;            
+            }
+    
+            .campaign__title {
+                font-size: 70px;
+                line-height: 80px;
+                text-align: right;
+                margin-right: 60px;            
+            }
+    
+            .campaign__text{
+                font-size: 15px;
+                line-height: 155.4%;
+                margin-top: 30px;
+    
+    
+                &-second-span{
+                    border-radius: 20px;
+                    padding-right: 9px;
+                    padding-left: 9px;
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width: 618px){
+
+    .campaign{
+
+        .campaign__content{
+            margin: 54px 0 0 5px;
+    
+            .campaign__desc{
+                font-size: 20px ;
+                line-height: 25px;
+                text-align: end;
+                padding: 0 19px 0 0;
+            }
+    
+            .campaign__desc-spec{
+                font-size: 20px;
+                line-height: 23px;
+                text-align: end;
+                margin: 10px 33px 0 0;            
+            }
+    
+            .campaign__title {
+                font-size: 35px;
+                line-height: 43px;
+                text-align: right;
+                margin: 16px 79px 0 0;          
+            }
+    
+            .campaign__text{
+                font-size: 13px;
+                line-height: 155.4%;
+                max-width: 290px;
+                margin: 19px 0 0 40px ;
+    
+    
+                &-second-span{
+                    border-radius: 20px;
+                    padding-right: 9px;
+                    padding-left: 9px;
+                }
+    
+            }
+        }
+    }
+
+}
