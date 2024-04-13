@@ -13,7 +13,6 @@
 
             span {
                 background-color: $YellowColor;
-                // color: var(--primery-bg-color);
                 padding-left: 20px;
                 padding-right: 40px;
                 padding-top: 10px;
@@ -89,3 +88,86 @@
 
 
 }
+
+
+// @media (max-width: 1225px){
+//     .instraction{
+//         .instraction__title {
+//             font-size: 45px;
+//             line-height: 75px;
+//             letter-spacing: -2px;
+//             text-align: center;
+//             margin: 0 0 0 -26px;
+
+//             span {
+//                 background-color: $YellowColor;
+//                 padding-left: 20px;
+//                 padding-right: 40px;
+//                 padding-top: 10px;
+//                 padding-bottom: 10px;
+//             }
+//         }
+
+//         .instraction__list {
+//             margin-top: 90px;
+//             display: grid;
+//             justify-content: center;
+//             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+//             gap: 71px 68px;
+
+
+//             li{
+
+//                 .instraction__item-wrapper{
+//                     height: 259px; 
+//                     text-align: center;
+//                     border-radius: 20px;
+//                     background: rgb(29, 28, 31);
+//                     position: relative;
+//                     overflow: hidden;
+
+//                     &::before{
+//                         content: "";
+//                         position: absolute;
+//                         top: -90px;
+//                         right: -40px;
+//                         width: 150px;
+//                         height: 150px;
+//                         border-radius: 50%;
+//                         background: rgba(52, 51, 57, 1);
+//                     }
+
+//                     img{
+//                         margin: 0px auto 0;
+                        
+//                     }
+
+//                     .item-wrapper__img-link{
+//                         margin: 17px auto 10px;
+//                     }
+
+
+//                     .instraction__text {
+//                         max-width: 298px;
+//                         font-size: 22px; 
+//                         line-height: 26px;
+//                         max-width: 442px; 
+//                         text-align: center;
+//                         margin: 13px auto 0;
+//                     }
+
+//                     .instraction__text-three{
+//                         width: 372px;
+//                     }
+//                 }
+
+//             }
+
+//             .instructions__btn{
+//                 margin: auto;
+                
+//             }
+//         }
+
+//     }
+// }

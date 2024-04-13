@@ -190,7 +190,7 @@
     }
 }
 
-@media(max-width: 1240px){
+@media(max-width: 1129px){
     .footer {
         padding: 0 20px;
 
@@ -215,6 +215,28 @@
                 color: #D9DBE1;
                 width: 80%;
             }
+
+            &__Items {
+                margin: 18px 77px 0 4px;
+                letter-spacing: 2px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px 25px;
+    
+                li{
+                    max-width: 100px;
+                    a{
+                        line-height: 21px;
+                        text-align: center;
+                        color: $YellowColor;
+    
+                        &:hover{
+                            color: $BaseColor;
+                        }
+                    }
+                }
+            }
+
         }
         
         .footer-menu {

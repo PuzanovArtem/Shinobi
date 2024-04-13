@@ -35,7 +35,7 @@
                     height: 303px;
                     top: 27px;
                     left: 27px;
-                    border: 1px solid $BaseColor;
+                    border: 1px solid $YellowColor;
                     border-radius: 50%;
                     background-clip: padding-box;
                     z-index: 2;
@@ -50,6 +50,9 @@
                     left: -106px;
                     border: 4px solid rgba(235, 252, 86, 0.2);
                     border-radius: 50%;
+                    border: 1.77px solid;
+
+
                     background-clip: padding-box;
                     z-index: -1;
                     clip-path: polygon( 0 55%, 100% 55% , 100% 100%, 0 100%);
@@ -102,4 +105,134 @@
         -webkit-text-stroke: 1px rgba(136, 136, 136, 0.52);  
         
     }
+}
+
+
+
+@media (max-width: 1024px){
+	.result{
+		margin: 235px 0 0 0;
+		
+		.result__content{
+			padding: 278px 0 136px 0;
+	
+			&__text{
+				font-size: 22px;
+				line-height: 44px;
+				margin: 0 auto;
+				padding: 5px 0 30px 0 ;
+			}
+	
+			&__circles{
+				top: 6%;
+				left: 50%;
+	
+				.result__circle-wrapper{
+					width: 299px;
+					height: 299px;
+	
+					&::before{
+						width: 260px;
+                        height: 260px;
+                        top: 19px;
+                        left: 17px;
+					}
+	
+					&::after{
+						width: 400px;
+                        height: 400px;
+                        bottom: -35px;
+                        left: -57px;
+					}
+	
+					.result__circle{
+						text-align: center;
+						padding: 90px 0 0 0;
+	
+						&-text{
+							font-size: 22px;
+							line-height: 40px;
+	
+						}
+	
+						&-title{
+							font-size: 30px;
+							line-height: 50px;
+	
+						}
+					}
+	
+				}
+			}
+	
+		}
+		
+	}
+	
+}
+
+@media (max-width: 586px){
+	.result{
+		margin: 134px 0 0 0;
+		
+		.result__content{
+			padding: 163px 0 44px 0;
+	
+			&__text{
+				font-size: 12px;
+				line-height: 13px;
+				margin: 0 auto;
+				padding: 5px 0 30px 0 ;
+
+                max-width: 300px;
+			}
+	
+			&__circles{
+				top: 6%;
+				left: 50%;
+	
+				.result__circle-wrapper{
+					width: 177px;
+					height: 177px;
+	
+					&::before{
+						width: 149px;
+                        height: 149px;
+                        top: 34px;
+                        left: 15px;
+					}
+	
+					&::after{
+						width: 252px;
+                        height: 252px;
+                        bottom: -29px;
+                        left: -40px;
+					}
+	
+					.result__circle{
+						text-align: center;
+						padding: 70px 0 0 0;
+	
+						&-text{
+							font-size: 13px;
+							line-height: 20px;
+	
+						}
+	
+						&-title{
+							font-size: 16px;
+							line-height: 24px;
+	
+						}
+					}
+	
+				}
+			}
+	
+		}
+		.result__repeated-word{
+            display: none;
+        }
+	}
+	
 }
