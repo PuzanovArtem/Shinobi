@@ -2704,7 +2704,7 @@ h6 {
 
 .swiper-slide {
   position: relative;
-  width: 841px;
+  max-width: 841px;
   /* margin-right: 150px; */
   /* aspect-ratio: 3/4; */
 }
@@ -2717,6 +2717,76 @@ h6 {
   user-select: none;
 }
 
+@media (max-width: 1440px) {
+  .analysis_title {
+    font-size: 70px;
+    line-height: 89px;
+    letter-spacing: -2px;
+    margin: 127px 0 102px 5px;
+  }
+  .analysis__content {
+    margin: 0 0 45px 0;
+  }
+  .swiper-slide {
+    max-width: 841px;
+  }
+}
+@media (max-width: 1200px) {
+  .analysis_title {
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: -2px;
+    margin: 75px 0 95px 5px;
+  }
+  .analysis__content {
+    margin: 0 0 45px 0;
+  }
+  .swiper-slide {
+    max-width: 700px;
+  }
+}
+@media (max-width: 898px) {
+  .analysis_title {
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: -2px;
+    margin: 50px 0 85px 5px;
+  }
+  .analysis__content {
+    margin: 0 0 45px 0;
+  }
+  .swiper-slide {
+    max-width: 500px;
+  }
+}
+@media (max-width: 696px) {
+  .analysis_title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    margin: 27px 50px 82px 35px;
+  }
+  .analysis__content {
+    margin: 0 0 45px 0;
+  }
+  .swiper-slide {
+    max-width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .analysis_title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: -1px;
+    margin: 9px 68px 62px 47px;
+  }
+  .analysis__content {
+    margin: 0 0 45px 0;
+  }
+  .swiper-slide {
+    max-width: 327px;
+  }
+}
 .services .services__content {
   margin: 349px 0 0 0;
 }
