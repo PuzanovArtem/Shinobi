@@ -3364,10 +3364,7 @@ h6 {
 }
 .instraction .instraction__content .instraction__title span {
   background-color: #EAFC52;
-  padding-left: 20px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 40px 10px 20px;
 }
 .instraction .instraction__content .instraction__list {
   margin-top: 90px;
@@ -3418,6 +3415,223 @@ h6 {
   margin: 20px 0 0 0;
 }
 
+@media (max-width: 1300px) {
+  .instraction .instraction__content {
+    margin: 84px 0 20px 0;
+  }
+  .instraction .instraction__content .instraction__title {
+    font-size: 59px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0 0 0 -26px;
+  }
+  .instraction .instraction__content .instraction__title span {
+    padding: 10px 40px 10px 20px;
+  }
+  .instraction .instraction__content .instraction__list {
+    margin-top: 90px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 71px 68px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper {
+    height: 259px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper img {
+    margin: 0px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-link {
+    margin: 17px auto 10px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text {
+    max-width: 298px;
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 442px;
+    margin: 13px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text-three {
+    width: 372px;
+  }
+  .instraction .instraction__content .instraction__list .instructions__btn {
+    margin: auto;
+  }
+  .instraction .instraction__content .instructions__content-next {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .instraction .instraction__content {
+    margin: 84px 0 20px 0;
+  }
+  .instraction .instraction__content .instraction__title {
+    font-size: 59px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0 0 0 -26px;
+  }
+  .instraction .instraction__content .instraction__title span {
+    padding: 10px 40px 10px 20px;
+  }
+  .instraction .instraction__content .instraction__list {
+    margin-top: 90px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 51px 48px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper {
+    height: 229px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper img {
+    margin: 0px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-link {
+    margin: 17px auto 10px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text {
+    max-width: 298px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 442px;
+    margin: 13px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text-three {
+    width: 372px;
+  }
+  .instraction .instraction__content .instraction__list .instructions__btn {
+    margin: auto;
+  }
+  .instraction .instraction__content .instructions__content-next {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .instraction .instraction__content {
+    margin: 84px 0 20px 0;
+  }
+  .instraction .instraction__content .instraction__title {
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0 0 0 -26px;
+  }
+  .instraction .instraction__content .instraction__title span {
+    padding: 10px 40px 10px 20px;
+  }
+  .instraction .instraction__content .instraction__list {
+    margin-top: 90px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 51px 48px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper {
+    height: 229px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper::before {
+    position: absolute;
+    top: -90px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper img {
+    margin: 0px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-link {
+    margin: 17px auto 10px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text {
+    max-width: 298px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 442px;
+    margin: 13px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text-three {
+    width: 372px;
+  }
+}
+@media (max-width: 572px) {
+  .instraction .instraction__content {
+    margin: 119px 0 20px 0;
+  }
+  .instraction .instraction__content .instraction__title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: -2px;
+    margin: 0 0 0 -26px;
+  }
+  .instraction .instraction__content .instraction__title span {
+    padding: 0px 30px 0px 8px;
+  }
+  .instraction .instraction__content .instraction__list {
+    margin-top: 38px;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 15px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper {
+    height: 161px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper::before {
+    position: absolute;
+    top: -90px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper img {
+    margin: 10px auto 0px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-monitor {
+    width: 82px;
+    height: 82px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-link {
+    width: 69px;
+    height: 69px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-users {
+    width: 75px;
+    height: 75px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-user-plus {
+    width: 78px;
+    height: 78px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .item-wrapper__img-percent {
+    width: 72px;
+    height: 72px;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text {
+    width: 285px;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 442px;
+    margin: 13px auto 0;
+  }
+  .instraction .instraction__content .instraction__list li .instraction__item-wrapper .instraction__text-three {
+    width: 266px;
+  }
+  .instraction .instraction__content .instraction__list li .instructions-btn {
+    display: none;
+  }
+}
 .disclaimer .disclaimer__content {
   margin: 64px 0 30px 0;
   text-align: center;
