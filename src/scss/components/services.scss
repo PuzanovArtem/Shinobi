@@ -5,11 +5,12 @@
 .services{
   
   .services__content{
-    margin: 349px 0 0 0;
+    margin: 356px 0 0 0;
 
     &__title{
       margin: 0 0 0 5px;
-
+      letter-spacing: 4px;
+      
     } 
 
     &__text{
@@ -155,7 +156,7 @@
       }
     }
     .services__content-btn {
-      margin: 50px auto 53px ;
+      margin: 46px auto 51px ;
     }
 
   }

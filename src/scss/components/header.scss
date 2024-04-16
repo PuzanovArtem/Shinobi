@@ -23,7 +23,7 @@
                 flex-basis: 100%;
                 align-items: center;
                 
-                padding:  0px 0 0 92px;
+                padding:  0px 5px 0 92px;
                
         
                 nav{
@@ -60,34 +60,26 @@
                 }
         
                 &-link{
-                    
-                    padding:0 7px 12px 0;
-        
-                    
-                    a{
+                    position: relative;
+    
+                    border-radius: 20px;
+                    border: 2px solid $YellowColor;
+                    padding: 11px 46px 12px 45px;
+                    span{
                         position: relative;
-        
-                        border-radius: 20px;
-                        border: 2px solid $YellowColor;
-                        padding: 11px 46px 12px 45px;
-                        span{
-                            position: relative;
-                            font-weight: 600;
-                            font-size: 22px;
-                            line-height: 25px;
-                            color: $YellowColor;
-                            
-        
-                            &:hover{
-                                color: $BaseColor;
-                            }    
-                        }
-        
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 25px;
+                        color: $YellowColor;
+                        
+    
+                        &:hover{
+                            color: $BaseColor;
+                        }    
                     }
-                   
-                    
-                    
+    
                 }
+                   
                
             }
             .burger{

@@ -205,9 +205,9 @@ h6 {
 .title span {
   color: #0C0B0E;
   background-color: #EAFC52;
-  padding: 5px 16px 5px 20px;
+  padding: 0px 13px 6px 15px;
   margin-left: -20px;
-  letter-spacing: -3px;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 768px) {
@@ -263,7 +263,7 @@ h6 {
   justify-content: space-between;
   flex-basis: 100%;
   align-items: center;
-  padding: 0px 0 0 92px;
+  padding: 0px 5px 0 92px;
 }
 .header .header__container .header__wrapper .header__content nav .nav {
   display: flex;
@@ -286,22 +286,19 @@ h6 {
   margin: 0 0px 0 80px;
 }
 .header .header__container .header__wrapper .header__content-link {
-  padding: 0 7px 12px 0;
-}
-.header .header__container .header__wrapper .header__content-link a {
   position: relative;
   border-radius: 20px;
   border: 2px solid #EAFC52;
   padding: 11px 46px 12px 45px;
 }
-.header .header__container .header__wrapper .header__content-link a span {
+.header .header__container .header__wrapper .header__content-link span {
   position: relative;
   font-weight: 600;
   font-size: 22px;
   line-height: 25px;
   color: #EAFC52;
 }
-.header .header__container .header__wrapper .header__content-link a span:hover {
+.header .header__container .header__wrapper .header__content-link span:hover {
   color: #FFFFFF;
 }
 .header .header__container .header__wrapper .burger {
@@ -1134,6 +1131,9 @@ h6 {
 .working__title {
   margin: 0 0px 130px 21px;
 }
+.working__title span {
+  letter-spacing: -2px;
+}
 .working .vertical-line {
   border: 1px solid rgba(255, 255, 255, 0.631372549);
   width: 1920px;
@@ -1480,7 +1480,7 @@ h6 {
   margin-top: -376px;
 }
 .functional__content__title {
-  margin: 6px 0 0 0px;
+  margin: 6px 0 0 -4px;
 }
 .functional__content__text {
   background: linear-gradient(180deg, #1b1b1b 0%, rgba(27, 27, 27, 0) 100%);
@@ -1768,7 +1768,7 @@ h6 {
 }
 .phases {
   background: #171717;
-  padding: 52px 0 20px 0px;
+  padding: 48px 0 20px 0px;
 }
 .phases__content__first .content__first__wrapper {
   justify-content: space-around;
@@ -2052,15 +2052,18 @@ h6 {
   }
 }
 .product-for__container {
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
 .product-for {
   padding: 70px 0 50px 0;
 }
+.product-for__content .product-for__content-title {
+  letter-spacing: 2px;
+}
 .product-for__content__wrapper {
   display: flex;
-  padding: 94px 0 18px 0;
+  padding: 95px 0 18px 0;
   justify-content: space-between;
 }
 .product-for__content__wrapper .content__wrapper__left,
@@ -2107,7 +2110,7 @@ h6 {
   font-size: 35px;
   font-weight: 600;
   color: #EAFC52;
-  margin-top: 22px;
+  margin-top: 27px;
 }
 .product-for__content__wrapper .content__wrapper__left .wrapper__inner p,
 .product-for__content__wrapper .content__wrapper__right .wrapper__inner p {
@@ -2306,6 +2309,21 @@ h6 {
   box-shadow: 0px 4px 15px 0px rgb(0, 0, 0);
   background: linear-gradient(180deg, rgb(27, 27, 27), rgba(27, 27, 27, 0) 100%);
 }
+.campaign .campaign__content .campaign__text-mob {
+  font-size: 26px;
+  line-height: 155.4%;
+  margin-top: 50px;
+  display: none;
+}
+.campaign .campaign__content .campaign__text-mob span {
+  color: #EAFC52;
+  border-radius: 20px;
+  font-style: italic;
+  padding-right: 9px;
+  padding-left: 9px;
+  box-shadow: 0px 4px 15px 0px rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(27, 27, 27), rgba(27, 27, 27, 0) 100%);
+}
 
 @media (max-width: 1200px) {
   .campaign .campaign__content {
@@ -2429,7 +2447,17 @@ h6 {
     margin: 19px 0 0 40px;
   }
   .campaign .campaign__content .campaign__text-second-span {
-    border-radius: 20px;
+    padding-right: 9px;
+    padding-left: 9px;
+    display: none;
+  }
+  .campaign .campaign__content .campaign__text-mob {
+    font-size: 13px;
+    line-height: 155.4%;
+    margin: 5px 0 0 49px;
+    display: block;
+  }
+  .campaign .campaign__content .campaign__text-mob span {
     padding-right: 9px;
     padding-left: 9px;
   }
@@ -2729,10 +2757,11 @@ h6 {
   }
 }
 .services .services__content {
-  margin: 349px 0 0 0;
+  margin: 356px 0 0 0;
 }
 .services .services__content__title {
   margin: 0 0 0 5px;
+  letter-spacing: 4px;
 }
 .services .services__content__text {
   font-size: 26px;
@@ -2855,7 +2884,7 @@ h6 {
   font-style: italic;
 }
 .services .services__content .services__content-btn {
-  margin: 50px auto 53px;
+  margin: 46px auto 51px;
 }
 
 @media (max-width: 1200px) {
@@ -3145,7 +3174,7 @@ h6 {
   margin: 39px 0 0 0;
 }
 .video .video__content {
-  margin: 77px 0 0 0;
+  margin: 82px 0 0 0;
 }
 .video .video__content .video__title {
   font-size: 75px;
@@ -3299,9 +3328,9 @@ h6 {
 .instraction .instraction__content .instraction__title {
   font-size: 59px;
   line-height: 90px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   text-align: center;
-  margin: 0 0 0 -26px;
+  margin: 0 0 0 0px;
 }
 .instraction .instraction__content .instraction__title span {
   background-color: #EAFC52;

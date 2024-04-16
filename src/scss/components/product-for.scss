@@ -1,28 +1,17 @@
 .product-for__container{
-    padding: 0 25px;
+    padding: 0 20px;
 }
 
 .product-for{
     padding: 70px 0 50px 0;
+
     &__content{
-
-        // &-title{
-        //     // font-family: $fontFamileSecond;
-        //     // font-size: 75px;
-        //     // font-weight: 700;
-        //     // line-height: 94px;
-        //     // text-align: left;
-        //     // text-transform: uppercase;
-
-        //     // span{
-        //     //     background: $YellowColor;
-        //     //     color: $Blackcolor;
-        //     // }
-        // }
-
+        .product-for__content-title{
+            letter-spacing: 2px;
+        }
         &__wrapper{
             display: flex;
-            padding: 94px 0 18px 0;
+            padding: 95px 0 18px 0;
             justify-content: space-between;
 
             
@@ -56,21 +45,25 @@
                     background-clip: padding-box;
                     z-index: 1;
                 }
+
                 .wrapper__inner{
                     position: relative;
                     z-index: 3;
                     text-align: center;
                     margin-top: 27px;
+
                     img{
                         margin: 0 auto 0;
     
                     }
+
                     h3{
                         font-size: 35px;
                         font-weight: 600;
                         color: $YellowColor;
-                        margin-top: 22px;
+                        margin-top: 27px;
                     }
+
                     p{
                         max-width: 360px;
                         font-size: 22px;
@@ -88,6 +81,7 @@
 @media (max-width: 1200px){
     .product-for{
         padding: 70px 0 50px 0;
+
         &__content{
 
             &-title{
@@ -107,6 +101,7 @@
 @media (max-width: 1024px){
     .product-for{
         padding: 70px 0 50px 0;
+
         &__content{
 
             &-title{
@@ -141,20 +136,24 @@
                         background-clip: padding-box;
                         z-index: 1;
                     }
+
                     .wrapper__inner{
                         position: relative;
                         z-index: 3;
                         text-align: center;
                         margin-top: 27px;
+
                         img{
                             width: 86px;
                             height: 86px;
         
                         }
+
                         h3{
                             font-size: 20px;
                             margin-top: 22px;
                         }
+
                         p{
                             max-width: 235px;
                             font-size: 13px;
@@ -178,6 +177,7 @@
 @media (max-width: 768px){
     .product-for{
         padding: 70px 0 50px 0;
+
         &__content{
 
             &-title{
