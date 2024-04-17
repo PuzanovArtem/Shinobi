@@ -173,7 +173,7 @@
 
 @media (max-width: 586px){
 	.result{
-		margin: 134px 0 0 0;
+		margin: 140px 0 0 0;
 		
 		.result__content{
 			padding: 163px 0 44px 0;
@@ -181,8 +181,8 @@
 			&__text{
 				font-size: 12px;
 				line-height: 13px;
-				margin: 0 auto;
-				padding: 5px 0 30px 0 ;
+				padding: 0px 0 0px 0;
+                margin: -21px auto 32px;
 
                 max-width: 300px;
 			}
@@ -198,20 +198,20 @@
 					&::before{
 						width: 149px;
                         height: 149px;
-                        top: 34px;
+                        top: 10px;
                         left: 15px;
 					}
 	
 					&::after{
 						width: 252px;
                         height: 252px;
-                        bottom: -29px;
+                        bottom: -13px;
                         left: -40px;
 					}
 	
 					.result__circle{
 						text-align: center;
-						padding: 70px 0 0 0;
+						padding: 56px 0 0 0;
 	
 						&-text{
 							font-size: 13px;
